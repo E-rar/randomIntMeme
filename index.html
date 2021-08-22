@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessTheNumber</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <form action="" onsubmit="return false">
+    <fieldset>
+    <h2>
+        In how many rounds you think you can guess the number?
+    </h2>
+    <div id="roundSelect">
+        <input type="radio" name="select" id="3"value="3" onclick="getCounterMax()">
+        <label for="3">3</label>
+        <input type="radio" name="select" id="4" value="4" onclick="getCounterMax()">
+        <label for="4">4</label>
+        <br>
+        <input type="radio" name="select" id="5" value="5" onclick="getCounterMax()">
+        <label for="5">5</label>
+        <input type="radio" name="select" id="custom" value="open" onchange="getCounterMax()">
+        <label for="custom">custom</label><br>
+        <input type="number" name="guessround" id="guessround" onchange="getCounterMax()">
+    </div>
+        <!-- das guessround und counter wird erst sichtbar (wenn costum checked ist) -->
+        <h1 id="counter">hallo</h1>
+    </fieldset>
+    <fieldset>
+        <input type="number" name="guessfield" id="guessfield"><br>
+        <input type="submit" value="guess" onclick="check()">
+    </fieldset>
+    
+    </form>
+    <div id="print">
+       
+    </div>
+    <div id="meme-field">
+        <img src="" alt="" id="meme">
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
